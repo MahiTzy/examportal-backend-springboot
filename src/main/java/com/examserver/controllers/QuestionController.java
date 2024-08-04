@@ -104,7 +104,6 @@ public class QuestionController {
         }
         List<Question> list = new ArrayList<>();
         questions.forEach(list::add);
-        Collections.shuffle(list);
         return ResponseEntity.ok(list);
     }
 
