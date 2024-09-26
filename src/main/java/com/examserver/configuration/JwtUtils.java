@@ -6,14 +6,14 @@ import java.util.Map;
 import java.util.function.Function;
 
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 @SuppressWarnings("deprecation")
-@Service
+@Component
 public class JwtUtils {
 
     private String SECRET_KEY = "dkvRw1q75xmP8mYI+3+cSIVFuNPwBQUBBgrUTadwy/k=";
